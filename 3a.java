@@ -5,5 +5,5 @@ public double getAverageRating() {
         total += r.getRating();
     }
   
-    return (double) total / allReviews.length;
+    return (double) total / allReviews.size();
   }
