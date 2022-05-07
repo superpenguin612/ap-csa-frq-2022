@@ -1,3 +1,9 @@
+/**
+ * 2022 AP Computer Science Exam - Free Response Questions (FRQ)
+ * Problems definition: https://apcentral.collegeboard.org/pdf/ap22-frq-computer-science-a.pdf
+ * Solutions for question 2)
+ */
+
 public class Textbook extends Book {
     private int edition;
 
