@@ -23,6 +23,26 @@ public ArrayList<String> collectComments() {
 }
 
 /**
+ * Alternate solution simplifying the first one a bit.
+ */
+public ArrayList<String> collectComments() {
+    ArrayList<String> arr = new ArrayList<>();
+  
+    for (int i = 0; i < allReviews.length; i++) {
+        String c = allReviews[i].getComment();
+        if (c.indexOf("!") != -1) {
+            String lastChar = c.substring(c.length() - 1);
+            if (!(lastChar.equals(".") || lastChar.equals("!"))) {
+                c += ".";
+            }
+            arr.add(i + "-" + c);
+        }
+    }
+  
+    return arr;
+}
+
+/**
  * Alternate solution checking the ending of the comment via indexOf().
  */
  public ArrayList<String> collectComments() {
