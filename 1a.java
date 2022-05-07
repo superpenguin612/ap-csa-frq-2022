@@ -29,21 +29,21 @@ public int getScore() {
  */
  public int getScore() {
     int score = 0;
-    boolean done = levelOne.goalReached();
+    boolean more = levelOne.goalReached();
 
-    if (!done) {
+    if (more) {
         score += levelOne.getPoints();
-        done = levelTwo.goalReached();
+        more = levelTwo.goalReached();
     }
-    if (!done) {
+    if (more) {
         score += levelTwo.getPoints();
-        done = levelThree.goalReached();
+        more = levelThree.goalReached();
     }
-    if (!done) {
+    if (more) {
         score += levelThree.getPoints();
-        done = isBonus();
+        more = isBonus();
     }
-    if (!done) {
+    if (more) {
         score *= 3;
     }
     
