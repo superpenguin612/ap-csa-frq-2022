@@ -8,7 +8,7 @@ public int countIncreasingCols() {
     int count = 0;
     
     for (int j = 0; j < grid[0].length; j++) {
-        if (grid[0].length == 1) {
+        if (grid.length == 1) {
             count++;
         } else {
             boolean increasing = true;
