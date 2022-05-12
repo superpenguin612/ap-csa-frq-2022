@@ -41,9 +41,9 @@ public int getScore() {
     }
     if (more) {
         score += levelThree.getPoints();
-        more = isBonus();
     }
-    if (more) {
+    
+    if (isBonus()) {
         score *= 3;
     }
     
